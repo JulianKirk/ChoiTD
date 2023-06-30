@@ -9,27 +9,27 @@ public class RoundSpawner : MonoBehaviour
     public GameData GameInfo = new GameData(50, 15
         ,new List<Round>() 
         {
+            new Round(3, 0, 0),
             new Round(5, 0, 0),
-            new Round(7, 0, 0),
             new Round(7, 3, 0),
-            new Round(10, 2, 2),
-            new Round(10, 5, 0),
+            new Round(10, 2, 0),
+            new Round(10, 4, 0),
             new Round(10, 5, 2),
             new Round(12, 5, 2),
             new Round(12, 5, 5),
             new Round(15, 10, 2),
             new Round(15, 10, 4),
-            new Round(15, 10, 6),
-            new Round(15, 10, 8),
-            new Round(15, 10, 10),
-            new Round(15, 12, 5),
-            new Round(15, 12, 8),
-            new Round(15, 15, 0),
-            new Round(5, 15, 10),
-            new Round(10, 10, 10),
-            new Round(15, 15, 0),
-            new Round(15, 0, 15),
-            new Round(20, 20, 20)
+            new Round(20, 15, 6),
+            new Round(20, 10, 10),
+            new Round(25, 10, 10),
+            new Round(30, 5, 5),
+            new Round(25, 12, 8),
+            new Round(25, 15, 0),
+            new Round(5, 25, 20),
+            new Round(15, 25, 15),
+            new Round(25, 35, 0),
+            new Round(35, 0, 35),
+            new Round(40, 40, 40)
         }
     
     );

@@ -10,6 +10,7 @@ public class MenuButtonFunctions : MonoBehaviour
         HealthManager.GameHealth = 1;
         CoinManager.TotalCoins = 0;
         TowerPlacementManager.TowerLocations.Clear();
+        MapGenerator.MapPath.Clear();
 
         Destroy(GameObject.Find("Music"));
 

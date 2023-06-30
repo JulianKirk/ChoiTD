@@ -19,8 +19,10 @@ public class MapGenerator : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
+        tilemap.ClearAllTiles();
+
         GenerateMap(20, 20);
     }
 
@@ -42,7 +44,7 @@ public class MapGenerator : MonoBehaviour
         }
 
         int mapIterationCount = 0;
-        while (MapPath == null)
+        while (MapPath == null || MapPath.Count == 0)
         {
             PathNode startNode = nodeGrid[0, Random.Range(0, mapHeight)];
 
